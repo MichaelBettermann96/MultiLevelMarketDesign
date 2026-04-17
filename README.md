@@ -42,7 +42,7 @@ The code has been tested with Python 3.9
 ---
 
 ## Changelog
-17.04.2025: Upload of the initial version 
+#### 17.04.2025: Upload of the initial version 
 ---
 
 ## 🌟 Contributors
