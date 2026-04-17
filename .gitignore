@@ -1,0 +1,17 @@
+.idea/*
+src/Agents/DSOAgent/output/*
+src/Agents/DSOAgent/NetworkSimulator/output/*
+src/Agents/ProsumerAgent/EnergyDataProvider/output/*
+src/Agents/ProsumerAgent/ProsumerModels/output/*
+src/Agents/CoordinatorAgent/output/*
+src/temp-plot.html
+src/evaluation/*
+src/Visualization/*.pdf
+src/Visualization/*.png
+src/Visualization/temp
+CodeSnippets/*
+*pyc
+*/__pycache__/*
+
+src/Agents/Vendor/__pycache__
+.Notes.txt

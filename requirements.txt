@@ -1,0 +1,7 @@
+pandas==2.1.0
+simbench==1.4.0
+pandapower==2.14.11
+aiomas==2.0.1
+Pyomo==6.6.2
+setuptools==65.5.1
+numpy==1.23.5
