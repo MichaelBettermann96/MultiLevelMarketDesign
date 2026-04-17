@@ -4,7 +4,7 @@
 Submitted to ACM SIGENERGY Energy Informatics Review  
 
 
-# This repository contains the code and data accompanying the paper:
+**This repository contains the code and data accompanying the paper:**
 > **Towards a Power Grid-Aware Electricity Market System - A Multi-Level Market Design**
 >
 > Accepted at * - *
