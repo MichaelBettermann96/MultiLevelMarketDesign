@@ -7,7 +7,9 @@ from operator import add, mul, sub
 
 timesteps = list(range(0,96,1))
 
-path = os.getcwd() + "/data"
+
+Test_date = "/02.12.2025"
+path = os.getcwd() + "/data/" + Test_date
 
 MeritOrdertypes = [
     "/LowLevelMeritOrder",

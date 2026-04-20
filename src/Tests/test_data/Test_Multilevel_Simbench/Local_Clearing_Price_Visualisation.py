@@ -8,7 +8,9 @@ import matplotlib.pyplot as plt
 plt.rcParams["figure.figsize"] = (14,8)
 plt.rcParams.update({'font.size': 11})
 
-path = os.getcwd() + "/data"
+Test_date = "/17.04.2026"
+
+path = os.getcwd() + "/data/" + Test_date
 
 MeritOrdertypes = [
     "/LowLevelMeritOrder",
@@ -38,7 +40,8 @@ for MeritOrdertype in MeritOrdertypes:
     # Read global price information
     df_global = pd.DataFrame()
     for Coordinator_name in os.listdir(path+MeritOrdertype):
-        df_temp = pd.read_csv(path + MeritOrdertype + "/" + Coordinator_name + "/global_clearing_price.csv", index_col=0)
+        df_temp = pd.read_csv(path + MeritOrdertype + "/" + Coordinator_name + "/global_clearing_price.csv")
+        #print(df_temp)
         df_global[Coordinator_name] = df_temp["clearing_price"]
 
 
@@ -67,7 +70,7 @@ for MeritOrdertype in MeritOrdertypes:
         # Read local price information
         df_local = pd.DataFrame()
         for Coordinator_name in os.listdir(path+MeritOrdertype):
-            df_temp = pd.read_csv(path + MeritOrdertype + "/" + Coordinator_name + "/local_clearing_price.csv", index_col=0)
+            df_temp = pd.read_csv(path + MeritOrdertype + "/" + Coordinator_name + "/local_clearing_price.csv")
             df_local[Coordinator_name] = df_temp["0"]
 
         minimum_price_list_for_each_coordinator = {}
